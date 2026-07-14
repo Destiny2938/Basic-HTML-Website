@@ -1,86 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Basic HTML Website</title>
-    <meta name="description" content="Destiny's Basic HTML Website">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Destiny's Basic HTML Website">
-    <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP._Ph8V2iImjMO09vtZ09PgAHaHk%3Fpid%3DApi&f=1&ipt=9a93df5a46699dfa42ab9b60a4c8d3df56c5d97bd8fc93bcc6e265f2c19165ba&ipo=images">
-    <meta property="og:image:alt" content="HTML icon">
-    <meta property="og:url" content="https://destiny2938.github.io/Basic-HTML-Website">
-</head>
+    <meta name="description" content="Destiny's Basic HTML Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Destiny's Basic HTML Website" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP._Ph8V2iImjMO09vtZ09PgAHaHk%3Fpid%3DApi&f=1&ipt=9a93df5a46699dfa42ab9b60a4c8d3df56c5d97bd8fc93bcc6e265f2c19165ba&ipo=images"
+    />
+    <meta property="og:image:alt" content="HTML icon" />
+    <meta
+      property="og:url"
+      content="https://destiny2938.github.io/Basic-HTML-Website"
+    />
+    <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" />
+    <link href="https://unpkg.com/sanitize.css/assets.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/sanitize.css/typography.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/sanitize.css/reduce-motion.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/sanitize.css/system-ui.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/sanitize.css/ui-monospace.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <header>
-        <p><img src="assets/287578904.png" alt="Destiny's Profile Picture" width="50" height="50"> Destiny2938</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="article.html">Articles</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+  <body>
+    <header class="header">
+      <div class="navigation">
+        <div>
+          <img
+            class="profile-picture"
+            src="assets/OIP-4044049898.jpg"
+            alt="Destiny's Profile Picture"
+          />
+          <p class="name">Destiny2938</p>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-container">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="project.html">Projects</a></li>
+            <li><a class="nav-link" href="article.html">Articles</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-        <h1>Frontend Developer</h1>
+      </div>
+      <div class="introduction">
+        <h1 class="position">Frontend Developer</h1>
+        <p class="description">
+          <abbr title="Hypertext Markup Language">HTML</abbr> only with proper
+          layout, no styling.
+        </p>
+      </div>
     </header>
     <main>
-        <section>
-            <h2>Projects</h2>
-            <h3>Single-Page CV</h3>
-            <h3>Destiny2938's Main Page</h3>
+      <div class="main">
+        <section class="projects">
+          <h2>Projects</h2>
+          <a
+            href="https://destiny2938.github.io/Single-Page-CV/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3>Single-Page CV</h3></a
+          >
+          <a
+            href="https://destiny2938.github.io/Pricing-Comparison-Table/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3>Pricing Comparison Table</h3></a
+          >
+          <a
+            href="https://destiny2938.github.io/Contact-Form/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><h3>Contact Form</h3></a
+          >
         </section>
-        <section>
-            <h2>Work Experience</h2>
-            <section>
-                <h3>roadmap.sh</h3>
-                <p>Solved all the frontend projects</p>
-                <p><a href="https://destiny2938.github.io/" target="_blank" rel="noopener noreferrer">Visit my Page</a>
-                </p>
-            </section>
-            <section>
-                <h3>OpenSource Work</h3>
-                <p>Contributed to 99 opensource projects. Made my own projects with 999 GitHub Stars.</p>
-                <p><a href="https://github.com/Destiny2938" target="_blank" rel="noopener noreferrer">Visit my GitHub
-                        Profile</a></p>
-            </section>
+        <section class="experiences">
+          <h2>Work Experience</h2>
+          <section class="experience">
+            <h3>roadmap.sh</h3>
+            <p>Solved all the frontend projects</p>
+            <p>
+              <a
+                href="https://destiny2938.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit my Page</a
+              >
+            </p>
+          </section>
+          <section class="experience">
+            <h3>OpenSource Work</h3>
+            <p>
+              Contributed to 50 open source projects. Made my own projects with
+              200 GitHub Stars.
+            </p>
+            <p>
+              <a
+                href="https://github.com/Destiny2938"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit my GitHub Profile</a
+              >
+            </p>
+          </section>
         </section>
-        <section>
-            <h2>Education</h2>
-            <p>asdadad</p>
-            <p>Courses I took: </p>
+        <section class="educations">
+          <h2>Education</h2>
+          <div class="education">
+            <p>
+              Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized
+              30 sessions.
+            </p>
+            <p>Courses I took:</p>
             <ul>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
+              <li>- Object Oriented Programming</li>
+              <li>- Data Structures and Algorithms</li>
+              <li>- Web Engineering</li>
+              <li>- Artificial Intelligence</li>
+              <li>- Human Computer Interaction</li>
+              <li>- Computer Graphics</li>
+              <li>- Database Management Systems</li>
+              <li>- Distributed Database Systems</li>
+              <li>- Discreet Mathematics</li>
             </ul>
+          </div>
         </section>
-        <article>
-            <h2>Reviews from my Teachers</h2>
-            <article>
-                <h3>From Jane Doe, Assistant Professor:</h3>
-                <p>asdasdasdasd</p>
-            </article>
-            <article>
-                <h3>From Jane Doe, Assistant Professor:</h3>
-                <p>asdasdasdasd</p>
-            </article>
-            <article>
-                <h3>From Jane Doe, Assistant Professor:</h3>
-                <p>asdasdasdasd</p>
-            </article>
-        </article>
+      </div>
+      <article class="reviews">
+        <h2>Reviews from my Teachers</h2>
+        <div class="review-container">
+          <article class="review">
+            <h3>
+              Jane Doe <br />
+              Assistant Professor:
+            </h3>
+            <p>
+              John Doe was a brilliant student; always stood out with his
+              assignments.
+            </p>
+          </article>
+          <article class="review">
+            <h3>
+              Jane Doe <br />
+              Assistant Professor:
+            </h3>
+            <p>
+              John Doe was a brilliant student; always stood out with his
+              assignments.
+            </p>
+          </article>
+          <article class="review">
+            <h3>
+              Jane Doe <br />
+              Assistant Professor:
+            </h3>
+            <p>
+              John Doe was a brilliant student; always stood out with his
+              assignments.
+            </p>
+          </article>
+        </div>
+      </article>
     </main>
     <footer>
-        <p>&#169; all right reserved 2026</p>
+      <p>&#169; all right reserved 2026</p>
     </footer>
-</body>
-
+  </body>
 </html>

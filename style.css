@@ -1,0 +1,274 @@
+:root {
+  --border: 1px solid black;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cause";
+}
+hr {
+  width: 100%;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: var(--border);
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1em;
+}
+.navigation div {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  font-size: 1.2rem;
+}
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.name {
+  display: inline-block;
+  margin: 0 0 0 1em;
+  font-size: 1.2rem;
+}
+.nav-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.nav-container li {
+  list-style-type: none;
+  margin: 0 0.8em 0 0;
+}
+.nav-link {
+  font-size: 1.1rem;
+}
+.nav-container li:has(a:not([href="contact.html"])):after {
+  content: "/";
+  margin: 0 0 0 0.8em;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.position {
+  margin-bottom: 0;
+  font-size: 1.7rem;
+}
+.description {
+  margin: 0 0 1em 0;
+  font-size: 1.1rem;
+  color: gray;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: var(--border);
+  border-top: none;
+}
+.projects h2,
+.experiences h2 {
+  margin: 0.5em 0 0.5em 0;
+}
+.projects h3 {
+  margin: 0.4em 0 0.4em 0;
+}
+.projects a {
+  width: 100%;
+  text-align: center;
+  border-bottom: var(--border);
+  border-top: none;
+}
+.projects a:first-of-type {
+  border-top: var(--border);
+}
+.projects a:last-of-type {
+  border-bottom: none;
+}
+.experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: var(--border);
+  border-top: none;
+}
+.experience {
+  width: 100%;
+  padding: 1em;
+  border-top: var(--border);
+}
+.experience:last-of-type {
+  border-bottom: var(--border);
+}
+.experience h3,
+.experience p {
+  margin: 0.1em 0 0.1em 0;
+}
+.experience p {
+  font-size: 1.1rem;
+}
+.experience a {
+  color: blue;
+}
+.educations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  border-bottom: var(--border);
+  border-top: none;
+}
+.education p {
+  font-size: 1.1rem;
+}
+.education ul {
+  padding: 0;
+  list-style-type: none;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review {
+  border: var(--border);
+  border-radius: 20px;
+  padding: 1em;
+}
+.review p {
+  font-size: 1.1rem;
+}
+.review:nth-last-of-type(2),
+.review:last-of-type {
+  display: none;
+}
+footer {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 0 10em 0;
+    padding: 1em;
+  }
+  .navigation div {
+    display: flex;
+    align-items: center;
+  }
+  .profile-picture {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  .name {
+    display: inline-block;
+    margin: 0 0 0 1em;
+    font-size: 1.2rem;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  .introduction {
+    margin: 0 0 10em 0;
+  }
+  .position {
+    font-size: 3rem;
+    margin: 0 0 0.2em 0;
+  }
+  .main {
+    display: flex;
+  }
+  .projects {
+    border: var(--border);
+    border-top: none;
+    border-left: none;
+    align-items: flex-start;
+    flex: 1 1;
+  }
+  .projects h2 {
+    font-size: 1.4rem;
+    margin: 0.7em 0 0.4em 1em;
+  }
+  .projects a {
+    display: flex;
+    font-size: 1rem;
+    width: 100%;
+  }
+  .projects a h3 {
+    margin: 0.6em 0 0.6em 1em;
+  }
+  .projects a:first-of-type {
+    border-top: none;
+  }
+  .experiences {
+    flex: 2.4 1;
+    border-bottom: var(--border);
+    border-right: var(--border);
+    align-items: flex-start;
+  }
+  .experiences h2 {
+    margin: 0.7em 0 0 0.6em;
+  }
+  .experience:first-of-type {
+    border-top: none;
+  }
+  .experience:last-of-type {
+    border-bottom: none;
+  }
+  .educations {
+    flex: 1.4 1;
+    align-items: flex-start;
+  }
+  .educations h2 {
+    margin: 0;
+  }
+  .review:nth-last-of-type(2),
+  .review:last-of-type {
+    display: block;
+  }
+  .reviews {
+    align-items: flex-start;
+    padding: 1em;
+    margin: 0 0 10em 0;
+  }
+  .review-container {
+    display: flex;
+    column-gap: 15px;
+  }
+  footer {
+    font-family: "Cause";
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
