@@ -1,3 +1,4 @@
 # Basic-HTML-Website
 - Live Demo: https://destiny2938.github.io/Basic-HTML-Website/
-- roadmap.sh: https://roadmap.sh/projects/portfolio-website, https://roadmap.sh/projects/basic-html-website
+- roadmap.sh: https://roadmap.sh/projects/portfolio-website
+- roadmap.sh:  https://roadmap.sh/projects/basic-html-website
